@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+		<wsse:Security
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+			soapenv:mustUnderstand="1">
+			<wsu:Timestamp
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+				wsu:Id="Timestamp-2">
+				<wsu:Created>2018-03-29T20:01:39.681Z</wsu:Created>
+				<wsu:Expires>2018-03-29T20:06:39.681Z</wsu:Expires>
+			</wsu:Timestamp>
+			<wsse:UsernameToken
+				xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+				wsu:Id="UsernameToken-1">
+				<wsse:Username>jiturre</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">QL66Z+E025</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<wsa:To>https://webservice.s6.exacttarget.com/Service.asmx</wsa:To>
+		<wsa:MessageID>urn:uuid:9e60fe27-d08b-4fcc-9655-d36081b9a00c
+		</wsa:MessageID>
+		<wsa:Action>Create</wsa:Action>
+	</soapenv:Header>
+	<soapenv:Body>
+		<par:CreateRequest xmlns:par="http://exacttarget.com/wsdl/partnerAPI"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<par:Options />
+			<par:Objects xsi:type="par:TriggeredSend">
+				<par:TriggeredSendDefinition>
+					<par:CustomerKey>SUGAR_TEST_TRIGGER</par:CustomerKey>
+				</par:TriggeredSendDefinition>
+				<par:Subscribers>
+					<par:EmailAddress>esanmartin@acl.cl</par:EmailAddress>
+					<par:Attributes>
+						<par:Name>HTML__BODY</par:Name>
+						<par:Value>&lt;html>&lt;b>THIS IS A TEST&lt;/b>&lt;/html>
+						</par:Value>
+					</par:Attributes>
+					<par:Attributes>
+						<par:Name>Subject</par:Name>
+						<par:Value>Japanese:
+							[0xe7][0x8a][0xac][0xe3][0x81][0xaf][0xe3][0x81][0x84][0xe3][0x81][0xa4][0xe3][0x81][0xae][0xe6][0x97][0xa5][0xe3][0x81][0x8b][0xe5][0x9c][0xb0][0xe7][0x90][0x83][0xe3][0x82][0x92][0xe6][0x94][0xaf][0xe9][0x85][0x8d][0xe3][0x81][0x99][0xe3][0x82][0x8b]
+						</par:Value>
+					</par:Attributes>
+					<par:SubscriberKey>esanmartin@acl.cl</par:SubscriberKey>
+				</par:Subscribers>
+			</par:Objects>
+		</par:CreateRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

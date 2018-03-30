@@ -1,0 +1,54 @@
+<soap:Envelope xmlns:soap='http://schemas.xmlsoap.org/soap/envelope/'
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema'
+	xmlns:wsa='http://schemas.xmlsoap.org/ws/2004/08/addressing'
+	xmlns:wsse='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd'
+	xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'
+	xmlns:ns1='http://exacttarget.com/wsdl/partnerAPI'>
+	<soap:Header>
+		<wsse:Security soap:mustUnderstand='1'>
+			<wsse:UsernameToken
+				xmlns:wsu='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd'>
+				<wsse:Username>jiturre</wsse:Username>
+				<wsse:Password
+					Type='http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText'>QL66Z+E025</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soap:Header>
+	<soap:Body>
+		<ns1:CreateRequest>
+			<ns1:Options />
+			<ns1:Objects xsi:type='ns1:TriggeredSend'>
+				<ns1:TriggeredSendDefinition>
+					<ns1:CustomerKey>12133973</ns1:CustomerKey>
+				</ns1:TriggeredSendDefinition>
+				<ns1:Client>
+					<ns1:ClientID>6287425</ns1:ClientID>
+				</ns1:Client>
+				<ns1:Subscribers>
+					<ns1:EmailAddress>esanmartin@acl.cl</ns1:EmailAddress>
+					<ns1:SubscriberKey>esanmartin@acl.cl</ns1:SubscriberKey>
+					<ns1:Attributes>
+						<ns1:Name>PATENTE</ns1:Name>
+						<ns1:Value>HHH23</ns1:Value>
+					</ns1:Attributes>
+					<ns1:Attributes>
+						<ns1:Name>NMOTOR</ns1:Name>
+						<ns1:Value>123456</ns1:Value>
+					</ns1:Attributes>
+					<ns1:Attributes>
+						<ns1:Name>FECHA</ns1:Name>
+						<ns1:Value>27/03/2017</ns1:Value>
+					</ns1:Attributes>
+					<ns1:Attributes>
+						<ns1:Name>ASEGURADORA</ns1:Name>
+						<ns1:Value>LIBERTY</ns1:Value>
+					</ns1:Attributes>
+					<ns1:Attributes>
+						<ns1:Name>VALOR1</ns1:Name>
+						<ns1:Value>UF 2.000</ns1:Value>
+					</ns1:Attributes>
+				</ns1:Subscribers>
+			</ns1:Objects>
+		</ns1:CreateRequest>
+	</soap:Body>
+</soap:Envelope>

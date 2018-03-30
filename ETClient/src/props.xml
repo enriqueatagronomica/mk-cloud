@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <entry key="repositoryFolder">/home/odoo/desarrollo/ws/eclipse-odoo-pydev/ETClient/repository</entry>
+  <entry key="axis2File">/home/odoo/desarrollo/ws/eclipse-odoo-pydev/ETClient/axis2.xml</entry>
+  <entry key="password">QL66Z+E025</entry>
+  <entry key="username">jiturre</entry>
+  <entry key="endPoint">https://webservice.s6.exacttarget.com/Service.asmx</entry>
+    
+  <entry key="unsubscribed">0</entry>
+  <entry key="subscribed">1</entry>
+
+  <entry key="ETappBaseEmailID">1679</entry>
+  
+</properties>
